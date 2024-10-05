@@ -2,6 +2,9 @@
 
 #include <stdio.h>
 #include <stdarg.h>
+#include "headers/log.h"
+
+int globalDebug = FALSE;
 
 void SNLogger(unsigned long ulErrorType, int iLine, const char *szFile, const char *pszFormat, ...){
     static int iCallCounter = 0;

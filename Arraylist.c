@@ -3,7 +3,7 @@
 #include <memory.h>
 #include "Arraylist.h"
 #include "headers/main.h"
-//#include "headers/log.h"
+#include "headers/log.h"
 
 
 ARRAYLIST* makeArrayList(){
@@ -26,7 +26,7 @@ void addItem(ARRAYLIST *arraylist, ITEM item){
         arraylist->size++;
     } else {
         printf("5\n");
-        //logDebug("Inside else loop");
+        logDebug("Inside else loop");
         ITEM *newItemList = (ITEM*) calloc(arraylist->capacity*2, sizeof(ITEM));
         for (int i = 0; i < arraylist->size; ++i) {
             newItemList[i] = arraylist->itemList[i];
