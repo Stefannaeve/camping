@@ -17,5 +17,6 @@ typedef struct {
 
 ARRAYLIST* makeArrayList();
 void addItem(ARRAYLIST *arraylist, ITEM item);
+void appendSecondListToFirst(ARRAYLIST *mainList, ARRAYLIST *secondList);
 
 #endif //TELTTUR_ARRAYLIST_H
